@@ -1,0 +1,68 @@
+/* FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*
+
+$color-primary: hsla(203,100%,13%, 1);
+$color-secondary: hsl(330, 87%, 17%);
+$color-fruit: tomato
+
+*/
+
+$primaryColor: #216351;
+$lightPrimaryColor: #4dc3a3;
+
+$secondaryColor: #64a48c;
+$lightSecondaryColor: #9cdccc;
+
+$accentColor: #ffd700;
+$darkAccentColor: #ce351a;
+
+$gradientPrimary: linear-gradient(
+  to bottom,
+  rgba($lightPrimaryColor, 0.7),
+  rgba($primaryColor, 0.8)
+);
+
+$gradientSecondary: linear-gradient(
+  to bottom,
+  rgba($lightSecondaryColor, 0.4),
+  rgba($secondaryColor, 0.5)
+);
+$gradientAccent: linear-gradient(
+  to bottom,
+  rgba($accentColor, 0.7),
+  rgba($darkAccentColor, 0.8)
+);
+
+$light: #f1f1f1;
+$light-1: #fff;
+$dark: #333;
+
+//
+
+$max-width: 160rem;
+
+/* MAP OR LIST */
+
+$colors: (
+  'primary': $primaryColor,
+  'light-primary': $lightPrimaryColor,
+  'secondary': $secondaryColor,
+  'light-secondary': $lightSecondaryColor,
+  'accent': $accentColor,
+  'dark-accent': $darkAccentColor,
+  'primary-gradient': $gradientPrimary,
+  'secondary-gradient': $gradientSecondary,
+  'accent-gradient': $gradientAccent,
+  'light': $light,
+  'light-1': $light-1,
+  'dark': $dark,
+);
+
+:root {
+  @each $name, $color in $colors {
+    --color-#{$name}: #{$color};
+  }
+}
