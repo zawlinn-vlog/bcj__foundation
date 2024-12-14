@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMIN | Site &mdash;</title>
+    <link rel="icon" href="./assets/img/fav/favicon.png" />
+    <!-- BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- JQUERY UI CSS -->
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/jquery-ui/themes/base/all.css"
+    />
+
+    <!-- FONTAWESOME CSS -->
+
+    <link rel="stylesheet" href="./assets/fontawesomepro/css/all.css" />
+
+    <!-- CUSTOM CSS -->
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- START STITE SETTING -->
+
+    <div class=""></div>
+
+    <!-- END STITE SETTING -->
+
+    <!-- START LEFT NAVBAR -->
+
+    <div class="wrappers">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <button
+          type="button"
+          class="navbar-toggler ms-auto"
+          data-bs-toggle="collapse"
+          data-bs-target="nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="nav" class="">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- LEFT SIDE BAR -->
+              <div
+                class="col-lg-2 col-md-3 fixed-top vh-100 overflow-auto leftsidebars"
+              >
+                <ul class="navbar-nav flex-column mt-4">
+                  <li class="nav-item nav-categories">Main</li>
+                  <li class="nav-item nav-categories">
+                    <a
+                      href="javascript:void(0)"
+                      class="nav-link p-3 mb-2 text-light sidebarlinks currents"
+                      ><i class="fas fa-tachometer-alt-fast me-2"></i>
+                      Dashboard</a
+                    >
+                  </li>
+                  <li class="nav-item nav-categories">
+                    <a
+                      href="javascript:void(0)"
+                      class="nav-link p-3 mb-2 text-light sidebarlinks"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#download"
+                      ><i class="fas fa-cloud-download-alt me-2"></i> Download
+                      <i class="far fa-chevron-down mores"></i
+                    ></a>
+
+                    <ul id="download" class="collapse">
+                      <li class="">
+                        <a
+                          href="javascript:void(0)"
+                          class="nav-link text-light sidebarlinks"
+                        >
+                          <i class="fas fa-long-arrow-alt-right me-4"></i
+                          >Education
+                        </a>
+                      </li>
+                      <li class="">
+                        <a
+                          href="javascript:void(0)"
+                          class="nav-link text-light sidebarlinks"
+                        >
+                          <i class="fas fa-long-arrow-alt-right me-4"></i
+                          >Software
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item nav-categories">
+                    <a
+                      href="javascript:void(0)"
+                      class="nav-link p-3 mb-2 text-light sidebarlinks"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#form"
+                      ><i class="fas fa-file me-2"></i> Form
+                      <i class="far fa-chevron-down mores"></i
+                    ></a>
+
+                    <ul id="form" class="collapse">
+                      <li class="">
+                        <a
+                          href="javascript:void(0)"
+                          class="nav-link text-light sidebarlinks"
+                        >
+                          <i class="fas fa-long-arrow-alt-right me-4"></i>Att
+                          Form
+                        </a>
+                      </li>
+                      <li class="">
+                        <a
+                          href="javascript:void(0)"
+                          class="nav-link text-light sidebarlinks"
+                        >
+                          <i class="fas fa-long-arrow-alt-right me-4"></i>Leave
+                          Form
+                        </a>
+                      </li>
+                      <li class="">
+                        <a
+                          href="javascript:void(0)"
+                          class="nav-link text-light sidebarlinks"
+                        >
+                          <i class="fas fa-long-arrow-alt-right me-4"></i
+                          >Enrolls
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item nav-categories">
+                    <a
+                      href="javascript:void(0)"
+                      class="nav-link p-3 mb-2 text-light sidebarlinks"
+                      ><i class="fas fa-toolbox me-2"></i> Widgets</a
+                    >
+                  </li>
+                  <!-- UI FEATURES -->
+                  <li class="nav-item nav-categories">UI Features</li>
+                  <li class="nav-item nav-categories">
+                    <a
+                      href="javascript:void(0)"
+                      class="nav-link p-3 mb-2 text-light sidebarlinks"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#articles"
+                      ><i class="fas fa-cloud-download-alt me-2"></i> Articles
+                      <i class="far fa-chevron-down mores"></i
+                    ></a>
+
+                    <ul id="articles" class="collapse">
+                      <li class="">
+                        <a
+                          href="javascript:void(0)"
+                          class="nav-link text-light sidebarlinks"
+                        >
+                          <i class="fas fa-long-arrow-alt-right me-2"></i>POST
+                        </a>
+                      </li>
+                      <li class="">
+                        <a
+                          href="javascript:void(0)"
+                          class="nav-link text-light sidebarlinks"
+                        >
+                          <i class="fas fa-long-arrow-alt-right me-2"></i
+                          >Anouncement
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- LEFT SIDE BAR -->
+
+              <!-- RIGHT SIDE BAR -->
+              <div class="col-lg-10 col-md-9 offset-2 fixed-top topnavbars">
+                <div class="row">
+                  <div class="navbar">
+                    <!-- START QUICK SEARCH -->
+                    <form action="" method="get" class="">
+                      <div class="input-group">
+                        <input
+                          type="search"
+                          name="quicksearch"
+                          id="quicksearch"
+                          class="form-control border-0 shadow-none"
+                          placeholder="Search by ID"
+                        />
+                        <div class="input-group-append">
+                          <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    <!-- END QUICK SEARCH -->
+                  </div>
+                </div>
+                <!-- START NOTI & USER ACCOUNT  -->
+                <!-- END NOTI & USER ACCOUNT  -->
+
+                <!-- START MOBILE CLOSE BTN -->
+                <!-- END MOBILE CLOSE BTN -->
+              </div>
+              <!-- RIGHT SIDE BAR -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- END LEFT NAVBAR -->
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/jquery-ui/dist/jquery-ui.min.js"></script>
+    <script src="./node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
