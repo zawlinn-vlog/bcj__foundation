@@ -1,0 +1,15 @@
+//
+
+@use "../abstract/mixin" as mx;
+
+%df-sc {
+  @include mx.dflex(row, flex-start, center);
+}
+
+%df-cc {
+  @include mx.dflex(row, center, center);
+}
+
+%df-ec {
+  @include mx.dflex(row, flex-end, center);
+}

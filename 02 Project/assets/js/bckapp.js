@@ -1,25 +1,18 @@
-$(document).ready(function(){
-
-	// Start Left Side Bar
-	$(".sidebarlinks").click(function(){
-		$(".sidebarlinks").removeClass("currents");
-		$(this).addClass("currents")
-
-	});
-	// End Left Side Bar
-
-
+$(document).ready(function () {
+  // Start Left Side Bar
+  $(".sidebarlinks").click(function () {
+    $(".sidebarlinks").removeClass("currents");
+    $(this).addClass("currents");
+  });
+  // End Left Side Bar
 });
 
-
-
-// Start Js Area 
-
+// Start Js Area
 
 // Start Site Setting
-const getsitesettings = document.getElementById('sitesettings');
-getsitesettings.addEventListener('click',function(){
-  document.body.classList.toggle('show-nav');
+const getsitesettings = document.getElementById("sitesettings");
+getsitesettings.addEventListener("click", function () {
+  document.body.classList.toggle("show-nav");
 });
 // End Site Setting
 
@@ -27,58 +20,56 @@ getsitesettings.addEventListener('click',function(){
 
 /* start notify & userlogout */
 
-// start dropdown 
-function dropbtn(e){
-	// console.log(e.target);
-	e.target.parentElement.nextElementSibling.classList.toggle('show');
+// start dropdown
+function dropbtn(e) {
+  // console.log(e.target);
+  e.target.parentElement.nextElementSibling.classList.toggle("show");
 }
 // end dropdown
 
 /* end notify & userlogout */
 
-
 /* End Top Sidebar */
-
 
 // Start Gauge Area
 var gaugeurs = new JustGage({
   id: "gaugeusers", // the id of the html element
-  width:200,
-  height:200,
+  width: 200,
+  height: 200,
   value: 50,
   min: 0,
   max: 70,
-  gaugeWidthScale: 0.6
+  gaugeWidthScale: 0.6,
 });
 
 var gaugecus = new JustGage({
   id: "gaugecustomers", // the id of the html element
-  width:200,
-  height:200,
+  width: 200,
+  height: 200,
   value: 700000,
   min: 0,
   max: 900000,
-  gaugeWidthScale: 0.6
+  gaugeWidthScale: 0.6,
 });
 
 var gaugeemps = new JustGage({
   id: "gaugeemployees", // the id of the html element
-  width:200,
-  height:200,
+  width: 200,
+  height: 200,
   value: 80,
   min: 0,
   max: 100,
-  gaugeWidthScale: 0.6
+  gaugeWidthScale: 0.6,
 });
 
 var gaugeinvs = new JustGage({
   id: "gaugeinvesters", // the id of the html element
-  width:200,
-  height:200,
+  width: 200,
+  height: 200,
   value: 40,
   min: 0,
   max: 50,
-  gaugeWidthScale: 0.6
+  gaugeWidthScale: 0.6,
 });
 
 // update the value randomly
@@ -89,67 +80,66 @@ setInterval(() => {
   gaugeinvs.refresh(Math.random() * 100);
 }, 5000);
 
-
 // 22GG
 
 // End Gauge Area
 
-
-// Start Expense Area 
-const ctx = document.getElementById('mypiechart');
+// Start Expense Area
+const ctx = document.getElementById("mypiechart");
 ctx.height = 250;
 new Chart(ctx, {
-  type: 'doughnut',
+  type: "doughnut",
   data: {
-	datasets: [{
-	  data: [12, 19, 3],
-	}]
+    datasets: [
+      {
+        data: [12, 19, 3],
+      },
+    ],
   },
   options: {
-	responsive:false,
-  }
+    responsive: false,
+  },
 });
-// End Expense Area 
+// End Expense Area
 
-// Start Earning Area 
-google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+// Start Earning Area
+google.charts.load("current", { packages: ["corechart"] });
+google.charts.setOnLoadCallback(drawChart);
 
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2004',  1000,      400],
-          ['2005',  1170,      460],
-          ['2006',  660,       1120],
-          ['2007',  1030,      540]
-        ]);
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ["Year", "Sales", "Expenses"],
+    ["2004", 1000, 400],
+    ["2005", 1170, 460],
+    ["2006", 660, 1120],
+    ["2007", 1030, 540],
+  ]);
 
-        var options = {
-          title: 'Sales Performance',
-          curveType: 'function',
-          legend: { position: 'bottom' }
-        };
+  var options = {
+    title: "Sales Performance",
+    curveType: "function",
+    legend: { position: "bottom" },
+  };
 
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+  var chart = new google.visualization.LineChart(
+    document.getElementById("curve_chart")
+  );
 
-        chart.draw(data, options);
-      }
+  chart.draw(data, options);
+}
 // End Earning Area
 
 // End Js Area
-
 
 // let result = Math.min(10,20,5,6,8,2,60,18,7);
 // console.log(result); //2
 // let results = Math.max(10,20,5,6,8,2,60,18,7);
 // console.log(results); //60
 
-
 // --------------------------------------------------
 
-// Get Minimu Number 
+// Get Minimu Number
 // var arrnums = [5,10,15,3,7,8,20,6];
-
 
 // function getminnumber(numbers){
 
@@ -165,9 +155,8 @@ google.charts.load('current', {'packages':['corechart']});
 //     if(numbers[x] > minnumber){
 //       minnumber = numbers[x]; //3
 //     }
-    
-//   }
 
+//   }
 
 //   return minnumber;
 // }
@@ -176,9 +165,7 @@ google.charts.load('current', {'packages':['corechart']});
 
 // --------------------------------------------------
 
-
 // var arrnumstwo = [5,10,15,3,7,8,20,6];
-
 
 // function sortmaxtominnum(numbers){
 
@@ -193,13 +180,13 @@ google.charts.load('current', {'packages':['corechart']});
 //   // for(let x=0; x < numbers.length ; x++){
 //   for(let x=y; x < numbers.length ; x++){
 
-//       // Get Max Number 
+//       // Get Max Number
 //     if(numbers[x] > maxnumber){
 //       maxnumber = numbers[x];
 //       curidx = x;
 //     }
 
-//       // Get Min Number 
+//       // Get Min Number
 //       // if(numbers[x] < maxnumber){
 //       //   maxnumber = numbers[x];
 //       //   curidx = x;
@@ -229,78 +216,66 @@ google.charts.load('current', {'packages':['corechart']});
 
 // --------------------------------------------------
 
-
 let saledatas = [
   {
-    title:"Order Value",
-    rank:80,
-    value:"120.8%",
-    color:"bg-secondary"
+    title: "Order Value",
+    rank: 80,
+    value: "120.8%",
+    color: "bg-secondary",
   },
   {
-    title:"Total Products",
-    rank:50,
-    value:"325.2%",
-    color:"bg-success"
+    title: "Total Products",
+    rank: 50,
+    value: "325.2%",
+    color: "bg-success",
   },
   {
-    title:"Quantity",
-    rank:70,
-    value:"25.60%",
-    color:"bg-warning"
+    title: "Quantity",
+    rank: 70,
+    value: "25.60%",
+    color: "bg-warning",
   },
   {
-    title:"New SKU",
-    rank:43,
-    value:"13.34%",
-    color:"bg-info"
+    title: "New SKU",
+    rank: 43,
+    value: "13.34%",
+    color: "bg-info",
   },
   {
-    title:"Debt",
-    rank:10,
-    value:"3.40%",
-    color:"bg-danger"
-  }
+    title: "Debt",
+    rank: 10,
+    value: "3.40%",
+    color: "bg-danger",
+  },
 ];
 
-
-
-
-
-function sortmaxtominnum(saledatas){
-
-  for(let y=0 ; y < saledatas.length ; y++){
-
+function sortmaxtominnum(saledatas) {
+  for (let y = 0; y < saledatas.length; y++) {
     let maxnumber = saledatas[y];
     let curidx = y;
 
-  for(let x=y; x < saledatas.length ; x++){
-
-      // Get Max Number 
-    if(saledatas[x].rank > maxnumber.rank){
-      maxnumber = saledatas[x];
-      curidx = x;
+    for (let x = y; x < saledatas.length; x++) {
+      // Get Max Number
+      if (saledatas[x].rank > maxnumber.rank) {
+        maxnumber = saledatas[x];
+        curidx = x;
+      }
     }
 
+    saledatas[curidx] = saledatas[y];
+    saledatas[y] = maxnumber;
   }
 
-  saledatas[curidx] = saledatas[y];
-  saledatas[y] = maxnumber;
-}
-
   return saledatas;
-
 }
 
+function showsaledatas(sortdatas) {
+  let getsalescnt = document.getElementById("salescontainer");
 
-function showsaledatas(sortdatas){
-  let getsalescnt = document.getElementById('salescontainer');
+  let progress = `<div>`;
 
-
-    let progress =`<div>`;
-
-    for(let x = 0 ; x < sortdatas.length;x++){
-      progress += `
+  for (let x = 0; x < sortdatas.length; x++) {
+    progress += `
       <div class="mt-2">
       <div class="d-flex justify-content-between">
         <small>${sortdatas[x].title}</small>
@@ -311,23 +286,39 @@ function showsaledatas(sortdatas){
       </div>
     </div>
       `;
-    }
+  }
 
+  progress += `</div>`;
 
-    progress += `</div>`;
-
-            
   getsalescnt.innerHTML = progress;
 }
 
-window.onload = function(){
-  let sortdatas= sortmaxtominnum(saledatas);
+window.onload = function () {
+  let sortdatas = sortmaxtominnum(saledatas);
   showsaledatas(sortdatas);
-}
-
+};
 
 // Start Footer
-  const getyear = document.getElementById('getyear');
-  const getfullyear = new Date().getFullYear();
-  getyear.textContent = getfullyear;
-// End Footer 
+const getyear = document.getElementById("getyear");
+const getfullyear = new Date().getFullYear();
+getyear.textContent = getfullyear;
+// End Footer
+
+/*
+
+
+var getDaysInMonth = function(month,year) {
+  // Here January is 1 based
+  //Day 0 is the last day in the previous month
+ return new Date(year, month, 0).getDate();
+// Here January is 0 based
+// return new Date(year, month+1, 0).getDate();
+};
+console.log(getDaysInMonth(1, 2012));
+console.log(getDaysInMonth(2, 2012));
+console.log(getDaysInMonth(9, 2012));
+console.log(getDaysInMonth(12, 2012));
+
+
+
+*/

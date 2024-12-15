@@ -4,18 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ADMIN | Site &mdash;</title>
+    <!-- FAV ICON -->
     <link rel="icon" href="./assets/img/fav/favicon.png" />
     <!-- BOOTSTRAP CSS -->
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-
-    <!-- JQUERY UI CSS -->
-
-    <link
-      rel="stylesheet"
-      href="./node_modules/jquery-ui/themes/base/all.css"
     />
 
     <!-- FONTAWESOME CSS -->
@@ -27,199 +21,363 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <!-- START STITE SETTING -->
+    <!-- WRAPPER  -->
 
-    <div class=""></div>
+    <main class="wrapper d-grid">
+      <!-- LEFT SIDEBAR -->
+      <nav class="sidebar sidebar-left overflow-hidden">
+        <a href="index.html" class="sidebar-logo">
+          <img
+            src="./assets/img/fav/favicon.png"
+            alt=""
+            class="sidebar-logo__img drop-shadow"
+          />
+          <span class="sidebar-logo__txt text-light text-uppercase"
+            >Plannco</span
+          >
+        </a>
 
-    <!-- END STITE SETTING -->
+        <div class="navbars overflow-auto">
+          <div class="navbars-wrapper">
+            <h4 class="navbars-title text-uppercase">Menu</h4>
+            <ul class="navbars-menu">
+              <!--  DASHBOARD MENU -->
 
-    <!-- START LEFT NAVBAR -->
-
-    <div class="wrappers">
-      <nav class="navbar navbar-expand-md navbar-light">
-        <button
-          type="button"
-          class="navbar-toggler ms-auto"
-          data-bs-toggle="collapse"
-          data-bs-target="nav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div id="nav" class="">
-          <div class="container-fluid">
-            <div class="row">
-              <!-- LEFT SIDE BAR -->
-              <div
-                class="col-lg-2 col-md-3 fixed-top vh-100 overflow-auto leftsidebars"
-              >
-                <ul class="navbar-nav flex-column mt-4">
-                  <li class="nav-item nav-categories">Main</li>
-                  <li class="nav-item nav-categories">
+              <li class="navbars-menu__items">
+                <a
+                  href="javascript:void(0)"
+                  class="navbars-link navbars-menu__link"
+                >
+                  <i class="fal fa-house navbars-icon"></i>
+                  <span class="navbars-text">Dashboards</span>
+                  <i class="far fa-chevron-down self-end"></i>
+                </a>
+                <!-- DASHBOARD SUB -->
+                <ul class="navbars-submenu">
+                  <li class="navbars-submenu__items">
                     <a
-                      href="javascript:void(0)"
-                      class="nav-link p-3 mb-2 text-light sidebarlinks currents"
-                      ><i class="fas fa-tachometer-alt-fast me-2"></i>
-                      Dashboard</a
+                      href="javascipt:void(0)"
+                      class="navbars-link navbars-submenu__link"
+                      >Default</a
                     >
                   </li>
-                  <li class="nav-item nav-categories">
+                  <li class="navbars-submenu__items">
                     <a
-                      href="javascript:void(0)"
-                      class="nav-link p-3 mb-2 text-light sidebarlinks"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#download"
-                      ><i class="fas fa-cloud-download-alt me-2"></i> Download
-                      <i class="far fa-chevron-down mores"></i
-                    ></a>
-
-                    <ul id="download" class="collapse">
-                      <li class="">
-                        <a
-                          href="javascript:void(0)"
-                          class="nav-link text-light sidebarlinks"
-                        >
-                          <i class="fas fa-long-arrow-alt-right me-4"></i
-                          >Education
-                        </a>
-                      </li>
-                      <li class="">
-                        <a
-                          href="javascript:void(0)"
-                          class="nav-link text-light sidebarlinks"
-                        >
-                          <i class="fas fa-long-arrow-alt-right me-4"></i
-                          >Software
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item nav-categories">
-                    <a
-                      href="javascript:void(0)"
-                      class="nav-link p-3 mb-2 text-light sidebarlinks"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#form"
-                      ><i class="fas fa-file me-2"></i> Form
-                      <i class="far fa-chevron-down mores"></i
-                    ></a>
-
-                    <ul id="form" class="collapse">
-                      <li class="">
-                        <a
-                          href="javascript:void(0)"
-                          class="nav-link text-light sidebarlinks"
-                        >
-                          <i class="fas fa-long-arrow-alt-right me-4"></i>Att
-                          Form
-                        </a>
-                      </li>
-                      <li class="">
-                        <a
-                          href="javascript:void(0)"
-                          class="nav-link text-light sidebarlinks"
-                        >
-                          <i class="fas fa-long-arrow-alt-right me-4"></i>Leave
-                          Form
-                        </a>
-                      </li>
-                      <li class="">
-                        <a
-                          href="javascript:void(0)"
-                          class="nav-link text-light sidebarlinks"
-                        >
-                          <i class="fas fa-long-arrow-alt-right me-4"></i
-                          >Enrolls
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item nav-categories">
-                    <a
-                      href="javascript:void(0)"
-                      class="nav-link p-3 mb-2 text-light sidebarlinks"
-                      ><i class="fas fa-toolbox me-2"></i> Widgets</a
+                      href="javascipt:void(0)"
+                      class="navbars-link navbars-submenu__link"
+                      >Saas</a
                     >
                   </li>
-                  <!-- UI FEATURES -->
-                  <li class="nav-item nav-categories">UI Features</li>
-                  <li class="nav-item nav-categories">
+                  <li class="navbars-submenu__items">
                     <a
-                      href="javascript:void(0)"
-                      class="nav-link p-3 mb-2 text-light sidebarlinks"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#articles"
-                      ><i class="fas fa-cloud-download-alt me-2"></i> Articles
-                      <i class="far fa-chevron-down mores"></i
-                    ></a>
+                      href="javascipt:void(0)"
+                      class="navbars-link navbars-submenu__link"
+                      >Crypto</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a
+                      href="javascipt:void(0)"
+                      class="navbars-link navbars-submenu__link"
+                      >Blog</a
+                    >
+                  </li>
 
-                    <ul id="articles" class="collapse">
-                      <li class="">
-                        <a
-                          href="javascript:void(0)"
-                          class="nav-link text-light sidebarlinks"
-                        >
-                          <i class="fas fa-long-arrow-alt-right me-2"></i>POST
-                        </a>
-                      </li>
-                      <li class="">
-                        <a
-                          href="javascript:void(0)"
-                          class="nav-link text-light sidebarlinks"
-                        >
-                          <i class="fas fa-long-arrow-alt-right me-2"></i
-                          >Anouncement
-                        </a>
-                      </li>
-                    </ul>
+                  <li class="navbars-submenu__items">
+                    <a
+                      href="javascipt:void(0)"
+                      class="navbars-link navbars-submenu__link"
+                      >Job</a
+                    >
                   </li>
                 </ul>
-              </div>
-              <!-- LEFT SIDE BAR -->
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="navbars-wrapper">
+            <h4 class="navbars-title text-uppercase">Apps</h4>
+            <ul class="navbars-menu">
+              <!--  DASHBOARD MENU -->
 
-              <!-- RIGHT SIDE BAR -->
-              <div class="col-lg-10 col-md-9 offset-2 fixed-top topnavbars">
-                <div class="row">
-                  <div class="navbar">
-                    <!-- START QUICK SEARCH -->
-                    <form action="" method="get" class="">
-                      <div class="input-group">
-                        <input
-                          type="search"
-                          name="quicksearch"
-                          id="quicksearch"
-                          class="form-control border-0 shadow-none"
-                          placeholder="Search by ID"
-                        />
-                        <div class="input-group-append">
-                          <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-search"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </form>
-                    <!-- END QUICK SEARCH -->
-                  </div>
-                </div>
-                <!-- START NOTI & USER ACCOUNT  -->
-                <!-- END NOTI & USER ACCOUNT  -->
+              <li class="navbars-menu__items">
+                <a href="" class="navbars-link navbars-menu__link">
+                  <i class="fad fa-calendar-alt"></i>
+                  <span class="navbars-text">Calender</span>
+                </a>
+              </li>
+              <li class="navbars-menu__items">
+                <a href="" class="navbars-link navbars-menu__link">
+                  <i class="fas fa-home navbars-icon"></i>
+                  <span class="navbars-text">Chat</span>
+                </a>
+              </li>
+              <li class="navbars-menu__items">
+                <a href="" class="navbars-link navbars-menu__link">
+                  <i class="fas fa-home navbars-icon"></i>
+                  <span class="navbars-text">File Manager</span>
+                </a>
+              </li>
 
-                <!-- START MOBILE CLOSE BTN -->
-                <!-- END MOBILE CLOSE BTN -->
-              </div>
-              <!-- RIGHT SIDE BAR -->
-            </div>
+              <li class="navbars-menu__items overflow-auto">
+                <a href="" class="navbars-link navbars-menu__link">
+                  <i class="far fa-store navbars-icon"></i
+                  ><span class="navbars-text">Ecommerce</span>
+                  <i class="far fa-chevron-down self-end"></i>
+                </a>
+                <!-- DASHBOARD SUB -->
+                <ul class="navbars-submenu" id="download-sub">
+                  <li class="navbars-submenu-items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Products</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Product Detail</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Orders</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Customers</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Cart</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Checkout</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Shops</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Add Products</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navbars-menu__items">
+                <a href="" class="navbars-link navbars-menu__link">
+                  <i class="fal fa-envelope navbars-icon"></i>
+                  <span class="navbars-text">Email</span>
+                  <i class="far fa-chevron-down self-end"></i>
+                </a>
+                <!-- EMAIL SUB -->
+                <ul class="navbars-submenu" id="download-sub">
+                  <li class="navbars-submenu-items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Inbox</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Read Email</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Templates</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navbars-menu__items">
+                <a href="" class="navbars-link navbars-menu__link">
+                  <i class="fad fa-briefcase navbars-icon"></i>
+                  <span class="navbars-text">Projects</span>
+                  <i class="far fa-chevron-down self-end"></i>
+                </a>
+                <!-- PROJECTS SUB -->
+                <ul class="navbars-submenu" id="download-sub">
+                  <li class="navbars-submenu-items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Projects Grid</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Projects Lists</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Projects Overview</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Create New</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navbars-menu__items overflow-auto">
+                <a href="" class="navbars-link navbars-menu__link">
+                  <i class="fas fa-clipboard-list-check navbars-icon"></i>
+                  <span class="navbars-text">Tasks</span>
+                  <i class="far fa-chevron-down self-end"></i>
+                </a>
+                <!-- TASKS SUB -->
+                <ul class="navbars-submenu" id="download-sub">
+                  <li class="navbars-submenu-items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Task List</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Task Kanban</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Create Task</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="navbars-menu__items">
+                <a href="" class="navbars-link navbars-menu__link">
+                  <i class="fas fa-clipboard-list-check navbars-icon"></i>
+                  <span class="navbars-text">Contacts</span>
+                  <i class="far fa-chevron-down self-end"></i>
+                </a>
+                <!-- DASHBOARD SUB -->
+                <ul class="navbars-submenu" id="download-sub">
+                  <li class="navbars-submenu-items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >User Grid</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >User List</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Profile List</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Profile
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbars-wrapper">
+            <h4 class="navbars-title text-uppercase">Pages</h4>
+            <!--  AUTHENICATION MENU -->
+            <ul class="navbars-menu">
+              <li class="navbars-menu__items">
+                <a href="" class="navbars-link navbars-menu__link">
+                  <i class="fal fa-house navbars-icon"></i>
+                  <span class="navbars-text">Authentication</span>
+                  <i class="far fa-chevron-down self-end"></i>
+                </a>
+                <!-- AUTHENTICATION SUB -->
+                <ul class="navbars-submenu" id="download-sub">
+                  <li class="navbars-submenu-items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Login</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Login 2</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Register</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Register 2</a
+                    >
+                  </li>
+
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Recover Password</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Recover Password 2</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Comfirm Mail</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Comfirmed Mail 2</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Email Verification</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Email Verification 2</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Step 2 Verification</a
+                    >
+                  </li>
+                  <li class="navbars-submenu__items">
+                    <a href="" class="navbars-link navbars-submenu__link"
+                      >Step 2 Verification 2</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
+
+        <!-- FOOTER -->
+
+        <div class="footer text-center">
+          <p class="footer-copyright">
+            Copyright<sup>&copy;</sup>
+            <span class="update-year">2024.</span>
+            <span class="copy-txt">All Rights Reversed</span>
+          </p>
+        </div>
       </nav>
-    </div>
-
-    <!-- END LEFT NAVBAR -->
-
+      <!-- RIGHT SIDEBAR -->
+      <div class="sidebar sidebar-right"></div>
+    </main>
+    <!-- WRAPPER  -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./node_modules/jquery-ui/dist/jquery-ui.min.js"></script>
-    <script src="./node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,30 @@
+//
+
+@use "../abstract/function" as fun;
+
+.drop-shadow {
+  filter: drop-shadow(0rem 0.1rem 0.2rem fun.getColor(primary));
+}
+
+$sides: (
+  "top": t,
+  "bottom": b,
+  "left": l,
+  "right": r,
+);
+
+@each $name, $val in $sides {
+  @for $i from 1 through 10 {
+    .m#{$val}-#{$i} {
+      margin-#{$name}: #{$i}rem;
+    }
+  }
+}
+
+.self-end {
+  margin-left: auto;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
