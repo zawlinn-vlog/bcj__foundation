@@ -14,7 +14,7 @@
   &-title {
     color: fun.getColor(dark-2);
     font-size: 1.1rem;
-    padding: 2rem 1.7rem 1rem;
+    padding: 2rem 1.3rem 1rem;
     letter-spacing: 0.02rem;
   }
 
@@ -23,10 +23,19 @@
     font-size: 1.3rem;
     transition: color 0.3s;
     letter-spacing: 0.015rem;
+    padding: 0.5rem 1.8rem;
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 
     &:hover {
       color: fun.getColor(light-1);
     }
+  }
+
+  &-child {
+    padding-inline: 4.25rem;
   }
 }
 
