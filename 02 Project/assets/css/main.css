@@ -35,6 +35,12 @@ a {
   text-decoration: none;
 }
 
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
 .sidebar-logo__txt {
   letter-spacing: 0.1rem;
 }
@@ -42,14 +48,20 @@ a {
 .navbars-title {
   color: var(--dark-2-color);
   font-size: 1.1rem;
-  padding: 2rem 1.7rem 1rem;
+  padding: 2rem 1.7rem 1.2rem;
   letter-spacing: 0.02rem;
+}
+.navbars-items {
+  padding: 0.8rem 2.5rem;
 }
 .navbars-link {
   color: var(--secondary-4-color);
   font-size: 1.3rem;
   transition: color 0.3s;
-  letter-spacing: 0.015rem;
+  letter-spacing: 0.02rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 .navbars-link:hover {
   color: var(--light-1-color);
@@ -272,24 +284,6 @@ a {
 }
 .navbars::-webkit-scrollbar {
   display: none;
-}
-.navbars-menu {
-  padding: 0;
-  list-style: none;
-}
-.navbars-menu__link {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  padding: 0.8rem 2.5rem;
-}
-.navbars-submenu {
-  padding: 0;
-  list-style: none;
-}
-.navbars-submenu__link {
-  display: block;
-  padding: 0.8rem 5rem;
 }
 
 .footer {

@@ -9,26 +9,35 @@ function slideUp(el) {
   $(el).slideUp(500);
 }
 
-function clearClass(n) {
-  $(".navbars-menu__link").each(function (ind, el) {
-    $(el).removeClass(n);
-  });
+function slideUp(el) {
+  $(el).slideUp(500);
 }
 
-function toggleClass(el, cname) {}
-
 function init() {
-  //   slideUp(".navbars-submenu");
+  slideUp(".navbars-sub");
 }
 
 $(document).ready(function () {
   init();
 
-  $(".navbars-link").on("click", function (e) {
-    e.preventDefault();
-    // const el = this.parentElement;
-    console.log();
+  $(".navbars-link").click(function (e) {
+    console.log($(this).next().hasClass("navbars-sub"));
 
-    toggleClass(this, "active");
+    if ($(this).next().hasClass("navbars-sub")) {
+      $(".navbars-sub").each((ind, el) => {
+        console.log(el, ind);
+        slideUp(el);
+
+        $(el).find(".navbars-link").removeClass("active");
+      });
+
+      $(this).next().slideDown(500);
+
+      $(this).next().find(".navbars-link:first").addClass("active");
+
+      $(".navbars-parent").removeClass("active");
+
+      $(e.target).addClass("active");
+    }
   });
 });
