@@ -21,8 +21,28 @@ function init() {
 $(document).ready(function () {
   init();
 
-  $(".navbars-menu").click(function (e) {
-    console.log(e.target.closest(".navbars-child"));
-    defSlide(this, "parent", "sub", "child");
+  $(".navbars-wrapper").click(function (e) {
+
+    if(e.target.closest('.navbars-menu')){
+
+      defSlide(e.target.closest('.navbars-menu'), "parent", "sub", "child");
+    }
+
+    if(e.target.classList.contains('navbars-child')){
+     
+    $('.navbars-child').removeClass('active');
+
+    $(e.target).addClass('active')
+
+    }
+   
+
+    
   });
+
+
+  // console.log($('.navbars-child'))
+
+
+  
 });
