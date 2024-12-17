@@ -22,27 +22,20 @@ $(document).ready(function () {
   init();
 
   $(".navbars-wrapper").click(function (e) {
+    if (e.target.closest(".navbars-menu")) {
+      defSlide(e.target.closest(".navbars-menu"), "parent", "sub", "child");
 
-    if(e.target.closest('.navbars-menu')){
+      $(".navbars-icon").removeClass("fa-chevron-up");
 
-      defSlide(e.target.closest('.navbars-menu'), "parent", "sub", "child");
+      $(e.target).parent().children(".navbars-icon").addClass("fa-chevron-up");
     }
 
-    if(e.target.classList.contains('navbars-child')){
-     
-    $('.navbars-child').removeClass('active');
+    if (e.target.classList.contains("navbars-child")) {
+      $(".navbars-child").removeClass("active");
 
-    $(e.target).addClass('active')
-
+      $(e.target).addClass("active");
     }
-   
-
-    
   });
 
-
   // console.log($('.navbars-child'))
-
-
-  
 });

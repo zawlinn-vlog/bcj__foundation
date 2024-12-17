@@ -6,11 +6,6 @@
     <title>ADMIN | Site &mdash;</title>
     <!-- FAV ICON -->
     <link rel="icon" href="./assets/img/fav/favicon.png" />
-    <!-- BOOTSTRAP CSS -->
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
 
     <!-- FONTAWESOME CSS -->
 
@@ -23,9 +18,8 @@
   <body>
     <!-- WRAPPER  -->
 
-    <main class="wrapper d-grid">
-      <!-- LEFT SIDEBAR -->
-      <nav class="sidebar sidebar-left overflow-hidden">
+    <nav class="hor-navbars">
+      <div class="hor-navbars__left">
         <!-- LOGO -->
         <a href="index.html" class="sidebar-logo">
           <img
@@ -37,7 +31,15 @@
             >Plannco</span
           >
         </a>
+      </div>
+      <div class="hor-navbars__right">
+        <button class="navbars-right__burger"></button>
+      </div>
+    </nav>
 
+    <main class="wrapper">
+      <!-- LEFT SIDEBAR -->
+      <nav class="sidebar sidebar-left overflow-hidden">
         <div class="navbars overflow-auto">
           <ul class="navbars-wrapper">
             <!-- Menu TITLE -->
@@ -50,11 +52,11 @@
               <a href="javascript:void(0)" class="navbars-link navbars-parent">
                 <i class="fal fa-house"></i>
                 <span class="">Dashboard</span>
-                <i class="far fa-chevron-down ms-auto navbars-icon"></i>
+                <i class="far fa-chevron-down navbars-icon"></i>
               </a>
 
               <!-- SUB MENU -->
-               
+
               <ul class="navbars-sub">
                 <li class="navbars-items navbar-menu-sub">
                   <a
@@ -132,7 +134,7 @@
               <a href="javascript:void(0)" class="navbars-link navbars-parent">
                 <i class="fab fa-shopify"></i>
                 <span>Ecommerce</span>
-                <i class="far fa-chevron-down ms-auto navbars-icon"></i>
+                <i class="far fa-chevron-down navbars-icon"></i>
               </a>
 
               <!-- SUB MENU -->
@@ -203,7 +205,7 @@
               <a href="javascript:void(0)" class="navbars-link navbars-parent">
                 <i class="fad fa-envelope"></i>
                 <span>Email</span>
-                <i class="far fa-chevron-down ms-auto navbars-icon"></i>
+                <i class="far fa-chevron-down navbars-icon"></i>
               </a>
 
               <!-- SUB MENU -->
@@ -239,7 +241,7 @@
               <a href="javascript:void(0)" class="navbars-link navbars-parent">
                 <i class="far fa-tasks"></i>
                 <span>Tasks</span>
-                <i class="far fa-chevron-down ms-auto navbars-icon"></i>
+                <i class="far fa-chevron-down navbars-icon"></i>
               </a>
 
               <!-- SUB MENU -->
@@ -275,7 +277,7 @@
               <a href="javascript:void(0)" class="navbars-link navbars-parent">
                 <i class="fas fa-briefcase"></i>
                 <span>Projects</span>
-                <i class="far fa-chevron-down ms-auto navbars-icon"></i>
+                <i class="far fa-chevron-down navbars-icon"></i>
               </a>
 
               <!-- SUB MENU -->
@@ -318,7 +320,7 @@
               <a href="javascript:void(0)" class="navbars-link navbars-parent">
                 <i class="fas fa-address-book"></i>
                 <span>Contacts</span>
-                <i class="far fa-chevron-down ms-auto navbars-icon"></i>
+                <i class="far fa-chevron-down navbars-icon"></i>
               </a>
 
               <!-- SUB MENU -->
@@ -354,7 +356,7 @@
                 </li>
               </ul>
             </li>
-            
+
             <!-- APPS TITLE -->
 
             <li class="navbars-title text-uppercase">pages</li>
@@ -365,7 +367,7 @@
               <a href="javascript:void(0)" class="navbars-link navbars-parent">
                 <i class="far fa-key"></i>
                 <span>Authentication</span>
-                <i class="far fa-chevron-down ms-auto navbars-icon"></i>
+                <i class="far fa-chevron-down navbars-icon"></i>
               </a>
 
               <!-- SUB MENU -->
@@ -420,7 +422,7 @@
 
         <!-- FOOTER -->
 
-        <div class="footer text-center px-3">
+        <div class="footer text-center">
           <p class="footer-copyright">
             Copyright<sup>&copy;</sup>
             <span class="update-year">2024.</span>

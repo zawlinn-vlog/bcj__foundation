@@ -3,6 +3,14 @@
 @use "../abstract/function" as fun;
 @use "../abstract/placeholder";
 
+.hor-navbars {
+  @extend %navGrid;
+
+  &__left {
+    background-color: fun.getColor(primary);
+  }
+}
+
 .sidebar {
   height: 100vh;
 
@@ -11,7 +19,7 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 5rem;
+    grid-template-rows: 1fr 5rem;
   }
 
   &-logo {
@@ -44,6 +52,8 @@
 }
 
 .footer {
+  width: 60%;
+  margin-inline: auto;
   display: grid;
-  place-items: end center;
+  align-content: end;
 }

@@ -256,11 +256,28 @@ ol {
   overflow: auto;
 }
 
+.text-light {
+  color: var(--light-1-color);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .sidebar-logo {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+}
+
+.wrapper, .hor-navbars {
+  display: grid;
+  grid-template-columns: minmax(16rem, 23rem) 1fr;
+}
+
+.hor-navbars__left {
+  background-color: var(--primary-color);
 }
 
 .sidebar {
@@ -270,7 +287,7 @@ ol {
   background-color: var(--primary-color);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr 5rem;
+  grid-template-rows: 1fr 5rem;
 }
 .sidebar-logo {
   color: var(--light-color);
@@ -295,8 +312,10 @@ ol {
 }
 
 .footer {
+  width: 60%;
+  margin-inline: auto;
   display: grid;
-  place-items: end center;
+  align-content: end;
 }
 
 .d-grid {

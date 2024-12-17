@@ -1,7 +1,10 @@
 //
 
 @use "../abstract/variables" as var;
+@use "../abstract/placeholder";
 
 .wrapper {
   max-width: var.$max-width;
+
+  @extend %navGrid;
 }

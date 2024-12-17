@@ -28,3 +28,11 @@ $sides: (
 .overflow-auto {
   overflow: auto;
 }
+
+.text-light {
+  color: fun.getColor(light-1);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
