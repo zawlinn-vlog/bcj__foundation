@@ -22,6 +22,7 @@ $(document).ready(function () {
   init();
 
   $(".navbars-menu").click(function (e) {
+    console.log(e.target.closest(".navbars-child"));
     defSlide(this, "parent", "sub", "child");
   });
 });
