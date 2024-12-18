@@ -13,8 +13,3 @@
 %df-ec {
   @include mx.dflex(row, flex-end, center);
 }
-
-%navGrid {
-  display: grid;
-  grid-template-columns: minmax(16rem, 23rem) 1fr;
-}

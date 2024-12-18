@@ -3,8 +3,13 @@
 @use "../abstract/variables" as var;
 @use "../abstract/placeholder";
 
-.wrapper {
+.main {
   max-width: var.$max-width;
+  height: 100vh;
 
-  @extend %navGrid;
+  // @extend %navGrid;
+
+  display: grid;
+  grid-template-columns: 23rem 1fr;
+  grid-template-rows: 6rem 1fr;
 }

@@ -6,3 +6,11 @@
   justify-content: $jus;
   align-items: $align;
 }
+
+//
+
+@mixin media($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}

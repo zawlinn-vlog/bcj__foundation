@@ -22,13 +22,18 @@ $(document).ready(function () {
   init();
 
   $(".navbars-wrapper").click(function (e) {
-    if (e.target.closest(".navbars-menu")) {
+    /* Main Menu */
+    if (e.target.closest(".navbars-parent")) {
       defSlide(e.target.closest(".navbars-menu"), "parent", "sub", "child");
 
       $(".navbars-icon").removeClass("fa-chevron-up");
 
       $(e.target).parent().children(".navbars-icon").addClass("fa-chevron-up");
+
+      // console.log("hello");
     }
+
+    /* SUB MENU */
 
     if (e.target.classList.contains("navbars-child")) {
       $(".navbars-child").removeClass("active");

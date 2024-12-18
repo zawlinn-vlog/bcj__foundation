@@ -41,49 +41,6 @@ ol {
   padding: 0;
 }
 
-.sidebar-logo__txt {
-  letter-spacing: 0.1rem;
-}
-
-.navbars-title {
-  color: var(--dark-2-color);
-  font-size: 1.1rem;
-  padding: 2rem 1.3rem 1rem;
-  letter-spacing: 0.02rem;
-}
-.navbars-link {
-  color: var(--secondary-4-color);
-  font-size: 1.3rem;
-  transition: color 0.3s;
-  letter-spacing: 0.015rem;
-  padding: 0.6rem 1.8rem;
-  display: flex;
-}
-.navbars-link:hover {
-  color: var(--light-1-color);
-}
-.navbars-parent {
-  display: grid;
-  grid-template-columns: 2.4rem 1fr auto;
-  align-items: center;
-  padding: 1rem 1.8rem;
-}
-.navbars-sub {
-  margin-top: -0.4rem;
-}
-.navbars-child {
-  padding-inline: 4.25rem;
-}
-
-.active {
-  color: var(--light-1-color);
-}
-
-.footer-copyright {
-  font-size: 1.3rem;
-  color: var(--secondary-4-color);
-}
-
 .drop-shadow {
   filter: drop-shadow(0rem 0.1rem 0.2rem var(--primary-color));
 }
@@ -264,65 +221,22 @@ ol {
   text-transform: uppercase;
 }
 
-.sidebar-logo {
+.navbars-logo {
+  grid-area: 1/1/2/2;
+}
+.navbars-logo__wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: center;
+}
+.navbars-logo__img {
+  width: 6rem;
 }
 
-.wrapper, .hor-navbars {
-  display: grid;
-  grid-template-columns: minmax(16rem, 23rem) 1fr;
-}
-
-.hor-navbars__left {
-  background-color: var(--primary-color);
-}
-
-.sidebar {
-  height: 100vh;
-}
-.sidebar-left {
-  background-color: var(--primary-color);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 5rem;
-}
-.sidebar-logo {
-  color: var(--light-color);
-  padding: 2rem;
-  gap: 1rem;
-}
-.sidebar-logo__img {
-  height: 4rem;
-}
-.sidebar-logo__txt {
-  font-size: 1.8rem;
-}
-.sidebar-right {
-  background-color: var(--light-color);
-}
-
-.navbars {
-  padding-bottom: 3rem;
-}
-.navbars::-webkit-scrollbar {
-  display: none;
-}
-
-.footer {
-  width: 60%;
-  margin-inline: auto;
-  display: grid;
-  align-content: end;
-}
-
-.d-grid {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-}
-
-.wrapper {
+.main {
   max-width: 160rem;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 23rem 1fr;
+  grid-template-rows: 6rem 1fr;
 }
