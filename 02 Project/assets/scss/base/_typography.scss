@@ -1,0 +1,65 @@
+// 
+
+@use "../abstract/function" as fun;
+
+.navbars{
+
+    
+
+    &-side__wrapper{
+        
+        overflow-y: auto;
+        /*   IE and Edge    */
+        -ms-overflow-style: none;
+
+
+        /* Firefox  */
+        scrollbar-width: none;
+        /*   Chrome, Safari and Opera   */
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+
+    &-title{
+        color:fun.getColor(dark-1);
+        letter-spacing: .015rem;
+        font-size: 1.1rem;
+        padding: 1.2rem .8rem;
+    }
+
+    &-item{
+        // padding: 1rem 1rem 2rem;
+    }
+
+    &-parent{
+        grid-template-columns: auto 1fr auto;
+        gap: .8rem;
+
+        align-items: center;
+
+        padding: .6rem 2rem .6rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    &-icon{
+        font-size: 1.3rem;
+    }
+
+    &-link{
+        color: fun.getColor(dark-2);
+        display: grid;
+
+        &:hover{
+            color: fun.getColor(light-1)
+        }
+    }
+
+    &-child{
+        padding: .6rem 3.4rem;
+    }
+
+  
+
+}

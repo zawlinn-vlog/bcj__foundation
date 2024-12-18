@@ -36,3 +36,12 @@ $sides: (
 .text-uppercase {
   text-transform: uppercase;
 }
+
+.bg-primary{
+  background-color: fun.getColor(primary);
+}
+
+.h-fit{
+  height: calc(100vh - 6rem);
+  overflow: hidden;
+}
