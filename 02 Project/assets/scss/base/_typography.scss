@@ -1,65 +1,86 @@
-// 
+//
 
 @use "../abstract/function" as fun;
 
-.navbars{
+@use "../abstract/mixin" as mx;
 
-    
+.navbars {
+  /* SIDE WRAPPER */
 
-    &-side__wrapper{
-        
-        overflow-y: auto;
-        /*   IE and Edge    */
-        -ms-overflow-style: none;
+  &-title {
+    color: fun.getColor(dark-2);
+    letter-spacing: 0.015rem;
+    font-size: 1.1rem;
+    padding: 1.2rem 1rem;
 
-
-        /* Firefox  */
-        scrollbar-width: none;
-        /*   Chrome, Safari and Opera   */
-        &::-webkit-scrollbar{
-            display: none;
-        }
+    &:not(:first-of-type) {
+      margin-top: 1.3rem;
     }
 
+    @include mx.media(62em) {
+      display: none;
+    }
+  }
 
-    &-title{
-        color:fun.getColor(dark-1);
-        letter-spacing: .015rem;
-        font-size: 1.1rem;
-        padding: 1.2rem .8rem;
+  &-parent {
+    grid-template-columns: 2rem 1fr auto;
+    gap: 0.3rem;
+
+    align-items: center;
+
+    padding: 0.8rem 2rem 0.8rem 1.4rem;
+  }
+
+  &-icon {
+    font-size: 1.4rem;
+  }
+
+  &-sub {
+    @include mx.media(62em) {
+      display: none;
+    }
+  }
+
+  &-link {
+    color: fun.getColor(secondary-4);
+    font-size: 1.2rem;
+
+    display: grid;
+
+    &:hover {
+      color: fun.getColor(secondary-light);
     }
 
-    &-item{
-        // padding: 1rem 1rem 2rem;
+    @include mx.media(62em) {
+      place-items: center center;
+      span,
+      .navbars-icon {
+        display: none;
+      }
+
+      i {
+        font-size: 1.7rem;
+      }
     }
+  }
 
-    &-parent{
-        grid-template-columns: auto 1fr auto;
-        gap: .8rem;
+  &-child {
+    padding: 0.6rem 3.75rem;
+  }
 
-        align-items: center;
+  &-footer {
+    color: fun.getColor(secondary-4);
+    display: grid;
+    align-items: end;
+    &__txt {
+      width: 60%;
+      margin-inline: auto;
+      text-align: center;
+      padding-bottom: 0.5rem;
 
-        padding: .6rem 2rem .6rem 1rem;
-        font-size: 1.2rem;
+      @include mx.media(62em) {
+        display: none;
+      }
     }
-
-    &-icon{
-        font-size: 1.3rem;
-    }
-
-    &-link{
-        color: fun.getColor(dark-2);
-        display: grid;
-
-        &:hover{
-            color: fun.getColor(light-1)
-        }
-    }
-
-    &-child{
-        padding: .6rem 3.4rem;
-    }
-
-  
-
+  }
 }

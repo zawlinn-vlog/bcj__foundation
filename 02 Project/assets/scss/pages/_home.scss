@@ -1,6 +1,7 @@
 //
 
 @use "../abstract/variables" as var;
+@use "../abstract/mixin" as mx;
 @use "../abstract/placeholder";
 
 .main {
@@ -12,4 +13,9 @@
   display: grid;
   grid-template-columns: 23rem 1fr;
   grid-template-rows: 6rem 1fr;
+
+  @include mx.media(62em) {
+    grid-template-columns: 5rem 1fr;
+    grid-template-rows: 5rem 1fr;
+  }
 }

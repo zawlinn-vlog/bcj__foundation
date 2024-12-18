@@ -1,6 +1,7 @@
 //
 
 @use "../abstract/function" as fun;
+@use "../abstract/mixin" as mx;
 
 .drop-shadow {
   filter: drop-shadow(0rem 0.1rem 0.2rem fun.getColor(primary));
@@ -37,11 +38,20 @@ $sides: (
   text-transform: uppercase;
 }
 
-.bg-primary{
+.bg-primary {
   background-color: fun.getColor(primary);
 }
 
-.h-fit{
+.h-fit {
   height: calc(100vh - 6rem);
   overflow: hidden;
+
+  @include mx.media(62em) {
+    height: auto;
+    overflow-y: auto;
+  }
+}
+
+.active {
+  color: fun.getColor(secondary-light);
 }
