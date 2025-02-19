@@ -1,0 +1,51 @@
+//
+
+.login-form__header {
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+  p {
+    font-size: 1.5rem;
+    // padding-left: 1rem;
+    opacity: 0.9;
+  }
+}
+
+.login-form__container {
+  .form-label {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #888;
+  }
+
+  .form-control {
+    font-size: 1.6rem;
+  }
+  .lbtn {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    letter-spacing: 0.03rem;
+    background-color: #556ee6;
+  }
+}
+
+.social-link {
+  font-size: 2.8rem;
+}
+
+.social-google {
+  color: rgb(244 106 106);
+}
+
+.forget-pass {
+  text-decoration: none;
+  font-size: 1.4rem;
+  opacity: 0.6;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+  //   text-transform: capitalize;
+}

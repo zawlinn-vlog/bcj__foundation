@@ -1,0 +1,7 @@
+//
+
+@use "./mixin" as mx;
+
+%d-flex__center {
+  @include mx.dflex;
+}

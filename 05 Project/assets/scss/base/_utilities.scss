@@ -1,0 +1,7 @@
+//
+
+@use "../abstract/placeholder";
+
+.df-center {
+  @extend %d-flex__center;
+}

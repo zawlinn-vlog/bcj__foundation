@@ -1,0 +1,16 @@
+// COLORs
+
+$primary-color: #4363f9;
+$primary-light--color: #8944ee;
+
+$light-color: #efefef;
+$gray-color: #898989;
+$dark-color: #222;
+
+$colors: (
+  "primary": $primary-color,
+  "primary-light": $primary-light--color,
+  "light": $light-color,
+  "dark": $dark-color,
+  "gray": $gray-color,
+);

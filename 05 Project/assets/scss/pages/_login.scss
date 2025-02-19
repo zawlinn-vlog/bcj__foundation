@@ -1,0 +1,49 @@
+//
+
+@use "../abstract/variables" as var;
+
+.login-form {
+  width: 49rem;
+  background-color: #fff;
+  padding-bottom: 8rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+  &__header {
+    width: 100%;
+    min-height: 10rem;
+    background-image: linear-gradient(
+      to right,
+      rgba(var.$primary-color, 0.15),
+      rgba(var.$primary-color, 0.15)
+    );
+
+    padding: 1rem 2rem;
+
+    & > *:first-child {
+      flex: 2;
+      padding-top: 1.5rem;
+    }
+
+    & > *:last-child {
+      flex: 1;
+    }
+
+    &-img {
+      height: 10rem;
+      object-fit: cover;
+    }
+  }
+
+  &__container {
+    padding: 2rem 3rem;
+
+    .form-control {
+      height: 4rem;
+    }
+  }
+}
+
+// .footer {
+//   margin-top: 5rem;
+// }
